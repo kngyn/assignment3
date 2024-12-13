@@ -2,55 +2,47 @@
 <html lang="en-CA">
   <head>
     <!--created by Katelyn Nguyen on December 2, 2024-->
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Canh</title>
-    
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
-    <!-- images -->
-   
-    
+
+    <!-- images / icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=soup_kitchen" />
+
+
     <style>
-      
-      html {
-        font-size: 16px;
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
       }
-      
+
+
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        font-size: 500px;
+        color: white;
+      }
+
+
       header {
         color: white;
         text-align: left;
         margin: 200px;
         font-size: 2.5em;
-       
       }
-      
-      .box1 {
-        width: 796px;
-        height: 446px;
-        background-color: rgba(0, 0, 0, 0.5);
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        
-        display: inline-block;
-      }
-      
-      img {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
-      }
-      
+
+      /* typography */
       h2 {
-          font-family: "Libre Baskerville", serif;
-          font-weight: 400;
-          font-style: normal;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
       }
-      
+
       p {
         width: 50%;
       }
@@ -61,43 +53,61 @@
         font-family: Arial, sans-serif;
       }
 
+
+      /* Navigation */
       nav {
+        height: 70px;
+        background: #fffcf5;
+        display: flex;
+        align-items: center;
+        padding: 10px;
         position: fixed;
-        top: 0;
         width: 100%;
-        background-color: #333;
-        padding: 1px;
-        text-align: center;
         z-index: 2;
       }
-      
-      nav li {
-        display: inline;
-        float: left;
-        width: 10.75em;
-        border-right: 0.15em solid;
-        margin-bottom: 0.5em;
-      }
-      
-      nav li:last-child {
-        width: 10em;
-        border-right: none;
-      }
-      
-      section{clear: both;}
 
       nav a {
-        color: white;
-        margin: 0 10px;
+        color: black;
+        padding: 15px;
+        margin: 0px 0px 0px 200px;
         text-decoration: none;
         font-size: 18px;
       }
+
 
       nav a:hover {
         background-color: grey;
       }
 
-      
+      .hero {
+        width: 100%;
+        height: 1000px;
+        background: #fa573e;
+        position: relative;
+        /* Make the hero a positioning reference */
+      }
+
+      .left-column {
+        position: absolute;
+        left: 100px;
+        /* Push to the left */
+        top: 50%;
+        /* Center vertically */
+
+        color: white;
+      }
+
+      .right-column {
+        position: absolute;
+        right: 200px;
+        /* Push to the right */
+        top: 30%;
+        /* Center vertically */
+        /* Correct vertical centering */
+        color: white;
+      }
+
+
       #S2,
       #S3,
       #S4,
@@ -116,8 +126,8 @@
       #S2 {
         background-color: #423711;
       }
-      
-      .box2 {
+
+      /*       .box2 {
         width: 300px;
         height: 400px;
         background-color: grey;
@@ -126,7 +136,7 @@
         top: -60%;
         display: inline-block;
       }
-
+ */
       #S3 {
         background-color: #bbb5a7;
       }
@@ -138,7 +148,7 @@
       #S5 {
         background-color: #787254;
       }
-      
+
       .box5 {
         width: 300px;
         height: 400px;
@@ -148,14 +158,15 @@
         left: 150px;
         display: inline-block;
       }
-      
+
       #S6 {
         background-color: purple;
       }
+
       #S7 {
         background-color: skyblue;
       }
-      
+
       .block {
         width: 32.75%;
         float: left;
@@ -168,88 +179,54 @@
       }
     </style>
   </head>
-  
-              <!-- WEBSITE STRUCTURE-->
+
+  <!-- WEBSITE STRUCTURE-->
   <body>
     <nav>
-      <ul>
-        
-<!--  <a href="/"></a> -->
-      <li><a href="#S2">My Story</a></li>
-      <li><a href="#S3">Soup Special</a></li>
-<!--  <a href="#S4">name</a>
-      <a href="#S5">name</a> -->
-      <li><a href="#S6">Recipes</a></li>
-      <li><a href="#S7">Contact Me</a></li>
-      </ul>
+      <div class="nav-sections">
+        <a href="#S2">My Story</a>
+        <a href="#S3">Soup Special</a>
+        <a href="#S6">Recipes</a>
+        <a href="#S7">Contact</a>
+      </div>
     </nav>
 
-    <header>
-      <p>
-        Canh
-      </p>
-       <img src="shoes.jpg" alt="newbalances in golden hour" width="796px" height="auto">
-      
-      <div class="box1">
+
+
+    <section class="hero">
+      <div class="left-column">
+        <h1>Canh</h1>
+        <p>
+          Also known as soup in Vietnamese. Explore the soup of Vietnam.
+        </p>
       </div>
 
-    </header>
+      <div class="right-column">
+        <span class="material-symbols-outlined">
+          soup_kitchen
+        </span>
+      </div>
+    </section>
+
+
     <!-- Homepage -->
     <div id="S1">
     </div>
-    
+
     <!-- My story -->
     <div id="S2">
+
       <h2>Section 2</h2>
       Your amazing content goes here!
       <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
       </p>
-      
+
       <div class="box2">
-        
+
         Shawarma
       </div>
     </div>
-    
-    <!-- Soup of the Month -->
-    <div id="S3">
-      <h3>Section 3</h3>
-      Your amazing content goes here!
-    </div>
-    
-    <!-- Image -->
-    <div id="S4">
-      <h3>Section 4</h3>
-      Your amazing content goes here!
-    </div>
-    
-    <!-- Key Ingredients -->
-    <div id="S5">
-      <h3>Section 5</h3>
-      Your amazing content goes here!
-      <div class="block">
-        mazda
-      </div>
-      <div class="box5">
-        lexus
-      </div>
-      
-      <p>
-        Chicken
-      </p>
-    </div>
-    
-    <!-- Recipes -->
-    <div id="S6">
-      <h3>Section 5</h3>
-      Your amazing content goes here!
-    </div>
-      
-    <!-- Get in Touch -->
-    <div id="S7">
-      <h3>Section 5</h3>
-      Your amazing content goes here!
-    </div>
+
   </body>
 </html>
