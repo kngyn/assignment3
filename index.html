@@ -5,12 +5,54 @@
     <meta charset="utf-8">
     <title>Canh</title>
     
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- images -->
+   
+    
     <style>
+      
+      html {
+        font-size: 16px;
+      }
+      
       header {
-        color: black;
-        text-align: center;
+        color: white;
+        text-align: left;
         margin: 200px;
-        font-size: 40px;
+        font-size: 2.5em;
+       
+      }
+      
+      .box1 {
+        width: 796px;
+        height: 446px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        
+        display: inline-block;
+      }
+      
+      img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
+      }
+      
+      h2 {
+          font-family: "Libre Baskerville", serif;
+          font-weight: 400;
+          font-style: normal;
+      }
+      
+      p {
+        width: 50%;
       }
 
       body {
@@ -26,7 +68,23 @@
         background-color: #333;
         padding: 1px;
         text-align: center;
+        z-index: 2;
       }
+      
+      nav li {
+        display: inline;
+        float: left;
+        width: 10.75em;
+        border-right: 0.15em solid;
+        margin-bottom: 0.5em;
+      }
+      
+      nav li:last-child {
+        width: 10em;
+        border-right: none;
+      }
+      
+      section{clear: both;}
 
       nav a {
         color: white;
@@ -46,6 +104,7 @@
       #S5,
       #S6,
       #S7 {
+        width: 100%;
         height: 500px;
         padding: 20px;
       }
@@ -56,6 +115,16 @@
 
       #S2 {
         background-color: #423711;
+      }
+      
+      .box2 {
+        width: 300px;
+        height: 400px;
+        background-color: grey;
+        position: relative;
+        left: 62.9%;
+        top: -60%;
+        display: inline-block;
       }
 
       #S3 {
@@ -75,7 +144,7 @@
         height: 400px;
         background-color: green;
         position: relative;
-          top: 10px;
+        top: 10px;
         left: 150px;
         display: inline-block;
       }
@@ -103,27 +172,44 @@
               <!-- WEBSITE STRUCTURE-->
   <body>
     <nav>
-<!--       <a href="/"></a> -->
-      <a href="#S2">My Story</a>
-      <a href="#S3">Soup Special</a>
+      <ul>
+        
+<!--  <a href="/"></a> -->
+      <li><a href="#S2">My Story</a></li>
+      <li><a href="#S3">Soup Special</a></li>
 <!--  <a href="#S4">name</a>
       <a href="#S5">name</a> -->
-      <a href="#S6">Recipes</a>
-      <a href="#S7">Contact Me</a>
+      <li><a href="#S6">Recipes</a></li>
+      <li><a href="#S7">Contact Me</a></li>
+      </ul>
     </nav>
 
     <header>
-      Canh
+      <p>
+        Canh
+      </p>
+       <img src="shoes.jpg" alt="newbalances in golden hour" width="796px" height="auto">
+      
+      <div class="box1">
+      </div>
+
     </header>
     <!-- Homepage -->
     <div id="S1">
-      <h3>Canh</h3>
     </div>
     
     <!-- My story -->
     <div id="S2">
-      <h3>Section 2</h3>
+      <h2>Section 2</h2>
       Your amazing content goes here!
+      <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+      </p>
+      
+      <div class="box2">
+        
+        Shawarma
+      </div>
     </div>
     
     <!-- Soup of the Month -->
